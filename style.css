@@ -1,0 +1,53 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #fff; }
+
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; height: 56px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px; background: #fff;
+}
+.left, .right { display: flex; align-items: center; gap: 16px; font-size: 20px; }
+.logo { font-weight: bold; font-size: 20px; }
+.play { color: red; }
+.search { display: flex; width: 40%; }
+.search input { flex: 1; padding: 8px 12px; border: 1px solid #ccc; border-radius: 20px 0 0 20px; }
+.search button { padding: 8px 16px; border: 1px solid #ccc; background: #f8f8f8; border-radius: 0 20px 20px 0; cursor: pointer; }
+.sidebar {
+  position: fixed; top: 56px; left: 0; bottom: 0; width: 200px;
+  padding: 12px; background: #fff;
+}
+.item {
+  display: block; padding: 10px 12px; margin-bottom: 4px;
+  color: #0f0f0f; text-decoration: none; border-radius: 10px; font-size: 14px;
+}
+.item:hover { background: #f2f2f2; }
+.item.active { background: #f2f2f2; font-weight: bold; }
+.content {
+  margin-left: 200px; margin-top: 56px; padding: 24px;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px 16px;
+}
+.thumb {
+  width: 100%; aspect-ratio: 16 / 9; border-radius: 12px;
+  background: linear-gradient(135deg, #cfd8dc, #90a4ae);
+}
+.info { display: flex; gap: 12px; margin-top: 12px; }
+.avatar { width: 36px; height: 36px; border-radius: 50%; background: #b0bec5; flex-shrink: 0; }
+.info h3 { font-size: 16px; color: #0f0f0f; margin-bottom: 4px; }
+.info p { font-size: 14px; color: #606060; }
+.chips {
+  margin-left: 200px; margin-top: 56px; padding: 12px 24px 0;
+  display: flex; gap: 12px; overflow-x: auto;
+}
+.chip {
+  padding: 8px 14px; border: none; border-radius: 8px;
+  background: #f2f2f2; font-size: 14px; cursor: pointer; white-space: nowrap;
+}
+.chip:hover { background: #e5e5e5; }
+.chip.active { background: #0f0f0f; color: #fff; }
+.content { margin-top: 0; }
+.video:nth-child(1) .thumb { background: url("images/chris1.jpg") center 20% / cover; }
+.video:nth-child(2) .thumb { background: url("images/chris2.jpg") center 20% / cover; }
+.video:nth-child(3) .thumb { background: url("images/chris3.jpg") center 20%/ cover; }
+.video:nth-child(4) .thumb { background: url("images/chris4.jpg") center 20%/ cover; }
+.video:nth-child(5) .thumb { background: url("images/chris5.jpg") center 20%/ cover; }
+.video:nth-child(6) .thumb { background: url("images/chris6.jpg") center 20%/ cover; }
