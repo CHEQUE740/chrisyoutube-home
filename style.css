@@ -45,9 +45,9 @@ body { font-family: Arial, sans-serif; background: #fff; }
 .chip:hover { background: #e5e5e5; }
 .chip.active { background: #0f0f0f; color: #fff; }
 .content { margin-top: 0; }
-.video:nth-child(1) .thumb { background: url("images/chris1.jpg") center 20% / cover; }
-.video:nth-child(2) .thumb { background: url("images/chris2.jpg") center 20% / cover; }
-.video:nth-child(3) .thumb { background: url("images/chris3.jpg") center 20%/ cover; }
-.video:nth-child(4) .thumb { background: url("images/chris4.jpg") center 20%/ cover; }
-.video:nth-child(5) .thumb { background: url("images/chris5.jpg") center 20%/ cover; }
-.video:nth-child(6) .thumb { background: url("images/chris6.jpg") center 20%/ cover; }
+video.thumb { display: block; object-fit: cover; background: #000; }
+.avatar { background: url("images/chris1.jpg") center / cover;}
+@media (max-width: 700px){
+  .sidebar { display: none;}
+  .content, .chips {margin-left: 0;}
+}
